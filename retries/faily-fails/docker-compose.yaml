@@ -1,0 +1,12 @@
+version: '3'
+services:
+  envoy:
+    image: envoyproxy/envoy-alpine:v1.16-latest
+    ports:
+      - "10000:10000"
+    volumes:
+      - ./envoy/envoy.yaml:/etc/envoy/envoy.yaml
+  faily:
+    image: ciscohdz/failyfails:latest
+    ports:
+      - "8080:8080"

@@ -1,0 +1,1 @@
+docker build -t ciscohdz/failyfails . && docker run -d -p 8080:8080 --name faily ciscohdz/failyfails && docker ps -a
